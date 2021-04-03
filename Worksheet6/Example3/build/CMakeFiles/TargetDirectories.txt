@@ -1,0 +1,3 @@
+C:/Users/25358/Desktop/VTK/Example3/build/CMakeFiles/QtVTKExample.dir
+C:/Users/25358/Desktop/VTK/Example3/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/25358/Desktop/VTK/Example3/build/CMakeFiles/ZERO_CHECK.dir

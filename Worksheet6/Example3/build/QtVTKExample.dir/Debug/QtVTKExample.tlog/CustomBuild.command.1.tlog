@@ -1,0 +1,30 @@
+^C:\USERS\25358\DESKTOP\VTK\EXAMPLE3\MAINWINDOW.UI
+setlocal
+C:\Qt\5.15.0\msvc2019_64\bin\uic.exe -o C:/Users/25358/Desktop/VTK/Example3/build/ui_mainwindow.h C:/Users/25358/Desktop/VTK/Example3/mainwindow.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\25358\DESKTOP\VTK\EXAMPLE3\ICONS\ICONS.QRC
+setlocal
+C:\Qt\5.15.0\msvc2019_64\bin\rcc.exe --name icons --output C:/Users/25358/Desktop/VTK/Example3/build/qrc_icons.cpp C:/Users/25358/Desktop/VTK/Example3/Icons/icons.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\25358\DESKTOP\VTK\EXAMPLE3\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/25358/Desktop/VTK/Example3 -BC:/Users/25358/Desktop/VTK/Example3/build --check-stamp-file C:/Users/25358/Desktop/VTK/Example3/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+^C:\USERS\25358\DESKTOP\VTK\EXAMPLE3\BUILD\CMAKEFILES\2B0D7F81A39CEB8E32DC3CBDF1757AC8\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/25358/Desktop/VTK/Example3 -BC:/Users/25358/Desktop/VTK/Example3/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/25358/Desktop/VTK/Example3/build/QtVTKExample.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

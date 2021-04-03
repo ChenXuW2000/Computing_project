@@ -1,0 +1,10 @@
+﻿  Automatic MOC and UIC for target QtVTKExample
+  Generating ui_mainwindow.h
+  Generating qrc_icons.cpp
+  Building Custom Rule C:/Users/25358/Desktop/VTK/Example3/CMakeLists.txt
+  mocs_compilation.cpp
+  main.cpp
+  mainwindow.cpp
+  qrc_icons.cpp
+  正在生成代码...
+  QtVTKExample.vcxproj -> C:\Users\25358\Desktop\VTK\Example3\build\Debug\QtVTKExample.exe
