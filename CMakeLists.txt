@@ -4,6 +4,6 @@ include(CTest)
 
 #Include sub-projects
 
-    add_subdirectory(./Worksheet7and8)
+    add_subdirectory(./Worksheet7)
 
 
